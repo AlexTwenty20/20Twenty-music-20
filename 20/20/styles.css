@@ -1,0 +1,126 @@
+/* Resetear márgenes y estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔲 Fondo gris oscuro */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+/* 🔳 Header negro con menú */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 15px 30px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0px; /* Espacio entre el logo y el texto */
+}
+
+.logo-img {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Estilos del logo - Hacerlo más grande */
+.logo {
+    font-size: 1.5rem;  /* 🔥 MÁS GRANDE */
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;  
+}
+
+.logo:hover {
+    transform: scale(1.1);  /* Efecto hover */
+}
+
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;  
+    text-decoration: none;  
+    font-size: 1rem;  
+    padding: 10px;  
+    transition: transform 0.3s ease-in-out; /* Aplica transición a todos los cambios */
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Amarillo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+
+/* 🔲 Contenedor principal */
+main {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 🔳 Secciones */
+.section {
+    display: none;
+    padding: 40px;
+    background: #292929;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Mostrar solo la sección activa */
+.section.active {
+    display: block;
+}
+
+/* Botones e inputs */
+input, button {
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ffaa00;
+    cursor: pointer;
+}
