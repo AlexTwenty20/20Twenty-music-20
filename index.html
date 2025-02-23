@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twenty Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" onclick="showSection('home')" class="logo">
+            <img src="20 web.png" alt="Logo" class="logo-img">
+            <span>Twenty Music</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('choose-music')">Elegir Música</a></li>
+                <li><a href="#" onclick="showSection('discover-artists')">Descubrir Artistas</a></li>
+                <li><a href="#" onclick="showSection('discover-genders')">Descubrir Géneros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <h2>Bienvenido a Twenty Music</h2>
+            <p>En un mundo donde la música es infinita y las tendencias cambian a la velocidad de la luz, 
+               <strong>Twenty Music</strong> nace como la plataforma definitiva para explorar, descubrir y disfrutar de la mejor música adaptada a tus gustos.</p>
+
+            <p><strong>🎵 Top 100 Global</strong>: Recopilación de los 100 temas más populares del mundo, extraídos directamente de Spotify y actualizados en tiempo real.</p>
+
+            <p><strong>🔎 Elegir Música</strong>: Usa nuestra función de búsqueda avanzada para encontrar cualquier canción o artista, descubrir temas relacionados y acceder a resultados rápidos sin necesidad de salir de la web.</p>
+
+            <p><strong>🎤 Descubrir Artistas</strong>: Blog con información sobre artistas emergentes, entrevistas y recomendaciones.</p>
+
+            <p><strong>🎶 Twenty Music es la revolución en descubrimiento musical.</strong> ¡Explora, descubre y escucha la mejor música con nosotros! 🚀🎧🔥</p>
+
+            <div id="top-100">Cargando...</div>
+        </section>
+
+        <section id="choose-music" class="section">
+            <h2>Encuentra tu canción perfecta</h2>
+            <input type="text" id="song-search" placeholder="Escribe el nombre de una canción o artista">
+            <button onclick="searchSong()">Buscar</button>
+            <div id="search-results"></div>
+        </section>
+
+        <section id="discover-artists" class="section">
+            <h2>Descubre Nuevos Artistas</h2>
+            <p>Blog con información de artistas emergentes.</p>
+        </section>
+
+        <section id="discover-genders" class="section">
+            <h2>Descubre Nuevos Géneros</h2>
+            <p>Busca un nuevo género que quieras investigar.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
